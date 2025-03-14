@@ -75,6 +75,8 @@ h6 {
 .sidebar-container {
   grid-area: sidebar;
   background-color: lightblue;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-container {
@@ -85,4 +87,21 @@ h6 {
 .projects-container {
   grid-area: projects;
   background-color: gray;
+}
+
+.sidebar-container li {
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+
+.dashboard-title {
+  border: 1px red solid;
+}
+
+.top-nav {
+  border: 1px red solid;
+}
+
+.bottom-nav {
+  border: 1px red solid;
 }
