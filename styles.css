@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  --header-height: 175px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: var(--header-height) calc(100vh - var(--header-height));
+  grid-template-areas:
+    'sidebar header'
+    'sidebar projects';
+}
+
+.layout-container {
+  border: 1px dashed blue;
+}
+
+.sidebar-container {
+  grid-area: sidebar;
+  background-color: lightblue;
+}
+
+.header-container {
+  grid-area: header;
+  background-color: coral;
+}
+
+.projects-container {
+  grid-area: projects;
+  background-color: gray;
+}
