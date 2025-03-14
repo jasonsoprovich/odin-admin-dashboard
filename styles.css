@@ -120,6 +120,11 @@ h6 {
 
 .container {
   --header-height: 175px;
+  --sidebar-bg: #1992d4;
+  --header-bg: #fff;
+  --project-bg: #e2e8f0;
+  --lightGrey: #e2e8f0;
+  --nav-hover-color: #0e5981;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -129,30 +134,52 @@ h6 {
     'sidebar projects';
 }
 
-.layout-container {
-  border: 1px dashed blue;
-}
-
 .sidebar-container {
   grid-area: sidebar;
-  background-color: lightblue;
+  background-color: var(--sidebar-bg);
   display: flex;
   flex-direction: column;
 }
 
 .header-container {
   grid-area: header;
-  background-color: coral;
+  background-color: var(--header-bg);
 }
 
 .projects-container {
   grid-area: projects;
-  background-color: gray;
+  background-color: var(--project-bg);
 }
 
 .sidebar-container li {
   list-style-type: none;
+}
+
+.sidebar-container .dashboard-title,
+.sidebar-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-container h3,
+.sidebar-container a {
+  color: #fff;
+}
+
+.sidebar-container .top-nav {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-container a {
   font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-container a:hover {
+  background-color: var(--nav-hover-color);
 }
 
 .dashboard-title {
