@@ -67,6 +67,11 @@
 * {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  --color-foam: #F7F7F7;
+  --color-sand: #DDBB8C;
+  --color-coral: #F27B62;
+  --color-dolphin: #8D9BA4;
+  --color-shark: #868281;
 }
 
 body {
@@ -124,7 +129,6 @@ h6 {
   --header-bg: #fff;
   --project-bg: #e2e8f0;
   --lightGrey: #e2e8f0;
-  --nav-hover-color: #0e5981;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -136,19 +140,19 @@ h6 {
 
 .sidebar-container {
   grid-area: sidebar;
-  background-color: var(--sidebar-bg);
+  background-color: var(--color-coral);
   display: flex;
   flex-direction: column;
 }
 
 .header-container {
   grid-area: header;
-  background-color: var(--header-bg);
+  background-color: var(--color-foam);
 }
 
 .projects-container {
   grid-area: projects;
-  background-color: var(--project-bg);
+  background-color: var(--color-dolphin);
 }
 
 .sidebar-container .dashboard-title,
@@ -175,7 +179,8 @@ h6 {
 }
 
 .sidebar-container a:hover {
-  background-color: var(--nav-hover-color);
+  background-color: var(--color-coral);
+  filter: brightness(1.2);
 }
 
 .dashboard-title {
@@ -214,7 +219,7 @@ h6 {
 
 button {
   color: white;
-  background-color: var(--sidebar-bg);
+  background-color: var(--color-coral);
   border-radius: 15px;
   outline: none;
   border: none;
