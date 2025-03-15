@@ -85,8 +85,8 @@ h6 {
   height: 100vh;
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: var(--header-height) calc(100vh - var(--header-height));
-  /* grid-template-rows: 1fr; */
+  /* grid-template-rows: var(--header-height) calc(100vh - var(--header-height)); */
+  grid-template-rows: 1fr;
   grid-template-areas:
     'sidebar header'
     'sidebar projects';
@@ -140,6 +140,94 @@ h6 {
   background-color: var(--sidebar-bg, coral);
   filter: brightness(1.2);
 }
+
+.header {
+  background-color: var(--header-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  max-width: 600px;
+}
+
+.search-input {
+  background-color: var(--main-bg, lightgrey);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  flex: 1;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-account {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+}
+
+.avatar-small {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.avatar-large {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-greeting {
+  background-color: var(--header-bg, white);
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.greeting-text p {
+  font-size: 1rem;
+}
+
+.greeting-text h2 {
+  font-size: 1.5rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-buttons .button {
+  background-color: var(--sidebar-bg, coral);
+  color: var(--sidebar-text, white);
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.6rem 1.5rem;
+}
+
+.action-buttons .button:hover {
+  filter: brightness(1.2);
+}
+
 
 
 /* 
