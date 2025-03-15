@@ -81,7 +81,7 @@ h6 {
 }
 
 .container {
-  --header-height: 175px;
+  /* --header-height: 175px; */
   height: 100vh;
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -106,7 +106,8 @@ h6 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   padding: 0.5rem;
 }
 
@@ -158,12 +159,28 @@ h6 {
   max-width: 600px;
 }
 
-.search-input {
-  background-color: var(--main-bg, lightgrey);
-  border: none;
+.search-icon {
+  margin-top: 10px;
+  color: var(--sidebar-bg, coral);
+}
+
+.notification-icon {
+  margin-top: 10px;
+  color: var(--sidebar-bg, coral);
+}
+
+.search-bar {
+  background-color: var(--card-bg, white);
+  border: 2px solid var(--sidebar-bg, coral);
   border-radius: 20px;
   padding: 0.5rem 1rem;
   flex: 1;
+  margin-right: 25px;
+}
+
+.search-bar:focus {
+  outline: none;
+  background-color: #F27B6210;
 }
 
 .user-actions {
@@ -179,13 +196,22 @@ h6 {
   font-weight: 600;
 }
 
+.user-account a {
+  text-decoration: none;
+  color: black;
+}
+
 .avatar-small {
+  min-width: 35px;
+  min-height: 35px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
 }
 
 .avatar-large {
+  min-width: 60px;
+  min-height: 60px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -227,66 +253,3 @@ h6 {
 .action-buttons .button:hover {
   filter: brightness(1.2);
 }
-
-
-
-
-/* 
-
-.header {
-  grid-area: header;
-  background-color: var(--header-bg, white);
-}
-
-.dashboard-content {
-  grid-area: projects;
-  background-color: var(--main-bg, lightgrey);
-}
-
-.dashboard-title {
-  border: 1px red solid;
-}
-
-.top-nav {
-  border: 1px red solid;
-}
-
-.bottom-nav {
-  border: 1px red solid;
-}
-
-.header-top-row {
-  display: flex;
-  height: 50px;
-}
-
-.header-top-row>div {
-  border: blue 1px solid;
-  flex: 1;
-}
-
-.header-bottom-row {
-  display: flex;
-  height: 50px;
-  background-color: aquamarine;
-  justify-content: space-between;
-}
-
-.header-bottom-row .buttons {
-  justify-content: flex-end;
-  align-content: center;
-}
-
-button {
-  color: white;
-  background-color: var(--color-coral);
-  border-radius: 15px;
-  outline: none;
-  border: none;
-  padding: 0.35rem;
-  width: 100px;
-}
-
-button:hover {
-  filter: brightness(1.2);
-} */
