@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel='stylesheet' href='./styles.css'>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'
+    rel='stylesheet'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' />
 </head>
 
 <body>
-  <aside class="container">
-    <aside class="sidebar">
+  <aside class='container'>
+    <aside class='sidebar'>
 
-      <div class="logo">
-        <i class="material-symbols-outlined">dashboard</i>
-        <h1 class="logo">Dashboard</h1>
+      <div class='logo'>
+        <i class='material-symbols-outlined'>dashboard</i>
+        <h1 class='logo'>Dashboard</h1>
       </div>
 
-      <nav class="sidebar-nav">
+      <nav class='sidebar-nav'>
         <ul>
-          <li><a href='#'><i class="material-symbols-outlined">home</i> Home</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">id_card</i> Profile</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">mode_comment</i> Messages</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">schedule</i> History</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">task</i> Tasks</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">groups</i> Communities</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>home</i> Home</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>id_card</i> Profile</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>mode_comment</i> Messages</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>schedule</i> History</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>task</i> Tasks</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>groups</i> Communities</a></li>
           <li class='spacer'></li>
-          <li><a href='#'><i class="material-symbols-outlined">settings</i> Settings</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">help_center</i> Support</a></li>
-          <li><a href='#'><i class="material-symbols-outlined">verified_user</i> Privacy</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>settings</i> Settings</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>help_center</i> Support</a></li>
+          <li><a href='#'><i class='material-symbols-outlined'>verified_user</i> Privacy</a></li>
         </ul>
       </nav>
     </aside>
 
-    <main class="top-nav">
+    <main class='main-content'>
       <header class='header'>
-        <div class="search-container">
-          <label for='search-bar'><i class="material-symbols-outlined search-icon">search</i></label>
+        <div class='search-container'>
+          <label for='search-bar'><i class='material-symbols-outlined search-icon'>search</i></label>
           <input type='search' name='search-bar' class='search-bar' id='search-bar' placeholder='Search...'>
         </div>
-        <div class="user-actions">
+        <div class='user-actions'>
           <div class='notifications'>
-            <a href='#'><i class="material-symbols-outlined notification-icon">notifications_active</i></a>
+            <a href='#'><i class='material-symbols-outlined notification-icon'>notifications_active</i></a>
           </div>
           <div class='user-account'>
             <a href='#'><img src='./images/jason yellow.png' alt='User Avatar' class='avatar-small'></a>
-            <a href='#'><span class="username">Jason Soprovich</span></a>
+            <a href='#'><span class='username'>Jason Soprovich</span></a>
           </div>
         </div>
       </header>
 
       <div class='user-greeting'>
-        <div class="greeting-avatar">
+        <div class='greeting-avatar'>
           <img src='./images/jason yellow.png' alt='User Avatar' class='avatar-large'>
         </div>
-        <div class="greeting-text">
+        <div class='greeting-text'>
           <p>Hi there,</p>
           <h2>Morgan Oakley (@morgan)</h2>
         </div>
@@ -72,7 +72,134 @@
         </div>
       </div>
 
-      <div class='dashboard-content'></div>
+      <div class='dashboard-content'>
+        <section class='projects-content'>
+          <h3>Your Projects</h3>
+          <div class='projects-grid'>
+            <div class='card'>
+              <h4>Super Cool Project</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, fuga? Maiores qui quisquam pariatur
+                praesentium?
+              </p>
+              <div>
+                <i class='material-symbols-outlined'>star</i>
+                <i class='material-symbols-outlined'>visibility</i>
+                <i class='material-symbols-outlined'>share</i>
+              </div>
+            </div>
+            <div class='card'>
+              <h4>Less Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis possimus repellat voluptas non
+                tempore dolorem perspiciatis illo inventore illum excepturi.
+              </p>
+              <div>
+                <i class='material-symbols-outlined'>star</i>
+                <i class='material-symbols-outlined'>visibility</i>
+                <i class='material-symbols-outlined'>share</i>
+              </div>
+            </div>
+            <div class='card'>
+              <h4>Impossible App</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa!
+              </p>
+              <div>
+                <i class='material-symbols-outlined'>star</i>
+                <i class='material-symbols-outlined'>visibility</i>
+                <i class='material-symbols-outlined'>share</i>
+              </div>
+            </div>
+            <div class='card'>
+              <h4>Easy Peasy App</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aliquid distinctio dolorum! Repellat
+                eveniet nemo, neque velit esse illum modi.
+              </p>
+              <div>
+                <i class='material-symbols-outlined'>star</i>
+                <i class='material-symbols-outlined'>visibility</i>
+                <i class='material-symbols-outlined'>share</i>
+              </div>
+            </div>
+            <div class='card'>
+              <h4>Ad Blocker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, dicta repudiandae. Vitae asperiores
+                eum laboriosam?
+              </p>
+              <div>
+                <i class='material-symbols-outlined'>star</i>
+                <i class='material-symbols-outlined'>visibility</i>
+                <i class='material-symbols-outlined'>share</i>
+              </div>
+            </div>
+            <div class='card'>
+              <h4>Money Maker</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio sequi sint delectus. Commodi odit nam
+                tempore esse consequatur.
+              </p>
+              <div>
+                <i class='material-symbols-outlined'>star</i>
+                <i class='material-symbols-outlined'>visibility</i>
+                <i class='material-symbols-outlined'>share</i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside class='right-sidebar'>
+          <section class='announcements'>
+            <h3>
+              <div class='announcement-card'>
+                <div class='announcement-item'>
+                  <h3>Site Maintenance</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, repellat.</p>
+                </div>
+                <div class='announcement-item'>
+                  <h3>Community Share Day</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime possimus explicabo ratione animi,
+                    accusantium illum!
+                  </p>
+                </div>
+                <div class='announcement-item'>
+                  <h3>Updated Privacy Policy</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolorem nihil nemo
+                    eligendi odio suscipit.</p>
+                </div>
+              </div>
+            </h3>
+          </section>
+          <section class='trending'>
+            <h3>Trending</h3>
+            <div class='trending-card'>
+              <div class='trending-item'>
+                <img src='./images/jason yellow.png' class='avatar-small' alt='User Avatar'>
+                <div class='trending-info'>
+                  <p class='trending-username'>@tegan</p>
+                  <p class='trending-project'>World Peace Builder</p>
+                </div>
+              </div>
+              <div class='trending-item'>
+                <img src='./images/jason yellow.png' class='avatar-small' alt='User Avatar'>
+                <div class='trending-info'>
+                  <p class='trending-username'>@morgan</p>
+                  <p class='trending-project'>Super Cool Project</p>
+                </div>
+              </div>
+              <div class='trending-item'>
+                <img src='./images/jason yellow.png' class='avatar-small' alt='User Avatar'>
+                <div class='trending-info'>
+                  <p class='trending-username'>@kendall</p>
+                  <p class='trending-project'>Life Changing App</p>
+                </div>
+              </div>
+              <div class='trending-item'>
+                <img src='./images/jason yellow.png' class='avatar-small' alt='User Avatar'>
+                <div class='trending-info'>
+                  <p class='trending-username'>@alex</p>
+                  <p class='trending-project'>No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
     </main>
 
 </body>
