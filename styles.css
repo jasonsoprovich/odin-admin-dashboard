@@ -378,3 +378,21 @@ h6 {
   border-top: solid 1px var(--accent-color, darkgray);
   margin: 0;
 }
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+}
+
+.trending-info .trending-username {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.trending-info .trending-project {
+  font-size: 0.8rem;
+  color: var(--accent-color, darkgray);
+}
