@@ -108,6 +108,11 @@ h6 {
   margin-bottom: 0;
 }
 
+#logo-link {
+  text-decoration: none;
+  color: var(--sidebar-text)
+}
+
 .sidebar-nav ul {
   list-style: none;
   display: flex;
@@ -262,7 +267,7 @@ h6 {
   color: var(--sidebar-text, white);
   border: none;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   padding: 0.6rem 1.5rem;
   transition: filter 0.3s ease;
@@ -375,6 +380,24 @@ h6 {
   align-items: center;
   gap: 1rem;
   padding: 0.8rem 0;
+  transition: color 0.3s ease;
+}
+
+.trending-item a,
+.trending-item a:visited,
+.trending-item a:link {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.trending-item:hover .trending-username,
+.trending-item:hover a {
+  color: var(--sidebar-bg, coral);
+}
+
+.trending-item:hover .trending-project {
+  color: var(--accent-color, darkgray);
 }
 
 .trending-info .trending-username {
