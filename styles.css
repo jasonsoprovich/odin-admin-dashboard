@@ -218,6 +218,15 @@ h6 {
   font-weight: 600;
 }
 
+.username {
+  transition: color 0.3s ease;
+}
+
+.user-account:hover .username,
+.user-account:hover a {
+  color: var(--sidebar-bg, coral);
+}
+
 .user-account a {
   text-decoration: none;
   color: black;
