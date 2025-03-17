@@ -71,6 +71,12 @@ h6 {
   isolation: isolate;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 1,
@@ -83,10 +89,12 @@ h6 {
   height: 100vh;
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas:
-    'sidebar header'
-    'sidebar projects';
+    "sidebar header"
+    "sidebar user-greeting"
+    "sidebar content";
+  position: relative;
 }
 
 .sidebar {
@@ -97,6 +105,10 @@ h6 {
   flex-direction: column;
   padding: 1rem;
   gap: 1.5rem;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .logo {
@@ -111,7 +123,7 @@ h6 {
 
 #logo-link {
   text-decoration: none;
-  color: var(--sidebar-text)
+  color: var(--sidebar-text);
 }
 
 .sidebar-nav ul {
@@ -151,12 +163,17 @@ h6 {
 }
 
 .header {
+  grid-area: header;
   background-color: var(--header-bg);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  z-index: 10;
 }
 
 .search-container {
@@ -250,6 +267,7 @@ h6 {
 }
 
 .user-greeting {
+  grid-area: user-greeting;
   background-color: var(--header-bg, white);
   padding: 1rem 2rem;
   display: grid;
@@ -257,6 +275,9 @@ h6 {
   align-items: center;
   gap: 1rem;
   box-shadow: var(--shadow-bottom);
+  position: sticky;
+  top: 72px;
+  z-index: 9;
 }
 
 .greeting-text p {
@@ -287,11 +308,35 @@ h6 {
   filter: brightness(1.2);
 }
 
+.main-content {
+  grid-area: content;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
 .dashboard-content {
+  margin-top: 72px;
+  padding: 2rem;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 2rem;
-  padding: 2rem;
+  width: 100%;
+}
+
+.projects-content {
+  width: 100%;
+  padding: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .dashboard-content h3 {
@@ -336,7 +381,6 @@ h6 {
   display: flex;
   justify-content: flex-end;
   gap: 1.2rem;
-
 }
 
 .card-actions i {
